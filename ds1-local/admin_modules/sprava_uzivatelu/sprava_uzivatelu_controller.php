@@ -51,6 +51,9 @@ class sprava_uzivatelu_controller extends ds1_base_controller
                 header("Location: $admin_url");
                 exit();
             }
+            
+            $zadano_vyhledavani = $this->loadRequestParam($request, "uzivatel_hledani", "post", null);
+            $_SESSION["uzivatel_zadano_prijmeni"] = $zadano_vyhledavani["prijmeni"];
 
             //musíme si ze session "vytáhnout" informace o zadaném příjmení ve vyhledávání
             $content_params["vyhledavani_prijmeni"] = $_SESSION["uzivatel_zadano_prijmeni"];
