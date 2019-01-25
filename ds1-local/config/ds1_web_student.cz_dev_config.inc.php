@@ -14,10 +14,10 @@
     // JEN RELATIVE PATH DLE CONTEXTU
     // TODO tohle si nastavte dle vlastni cesty na localhostu = nazev adresare
     if (DS1_CONTEXT == DS1_CONTEXT_VALUE_WEB) {
-        define("DS1_DOMAIN_RELATIVE_PATH_ADD", "/github_web-sp2-ds1-student/web");
+        define("DS1_DOMAIN_RELATIVE_PATH_ADD", "/web-sp2-ds1-student/web");
     }
     else if (DS1_CONTEXT == DS1_CONTEXT_VALUE_ADMIN) {
-        define("DS1_DOMAIN_RELATIVE_PATH_ADD", "/github_web-sp2-ds1-student/web/admin");
+        define("DS1_DOMAIN_RELATIVE_PATH_ADD", "/web-sp2-ds1-student/web/admin");
     }
 
     // PRIPOJENI K DB

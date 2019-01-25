@@ -77,6 +77,13 @@
         // NAZVY SLOUPCU V DB, pokud jsou treba
         define("TABLE_USER_COLUMN_PASSWORD_BCRYPT", "password_bcrypt");
 
+        // dodatky pro modul dokumentace (Drtina - A17B0202P)
+        define("TABLE_DOKUMENTACE", "dokumentace");
+        define("TABLE_DOKUMENTACE_DRUH_ZAPISU", "dokumentace_druh_zapisu");
+        define("TABLE_DRUH_ZAPISU_UZIVATELSKE_ROLE", "druh_zapisu_uzivatelske_role");
+        define("TABLE_UZIVATELSKE_ROLE", "uzivatelske_role");
+        define("TABLE_UZIVATELE_PRIDELENI_ROLI", "uzivatele_prideleni_roli");
+
     // ****************************************************************************************
     // ***********    KONEC DB      ***********************************************************
     // ****************************************************************************************

@@ -66,7 +66,6 @@ class obyvatele_controller extends ds1_base_controller
         if ($action == "obyvatel_add_go") {
             // nacist data
             $obyvatel_new = $this->loadRequestParam($request, "obyvatel", "post", null);
-            //printr($obyvatel_new);
 
             // FIXME mozna casem kontrola, jestli mam datum ve spravnem formatu - spoleham na prohlizec
             // datum_narozeni

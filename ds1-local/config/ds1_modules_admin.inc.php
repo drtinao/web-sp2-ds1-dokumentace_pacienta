@@ -35,6 +35,37 @@
 
     // **************   KONEC Modul pokoje         ****************************************
     // ************************************************************************************
+	
+	
+	// ************************************************************************************
+    // **************   Modul dokumentace (Drtina - A17B0202P)	***************************
 
+	// novy modul
+    $module = array();
+    $module["name"] = "dokumentace_pacient";
+    $module["title"] = "Dokumentace";
+    $module["route_name"] = "dokumentace_pacient";
+    $module["route_path"] = "/plugin/$module[name]";
+    $module["route"] = array("controller_name" => "dokumentace_pacient_controller", "controller_action" => "indexAction");
 
+    // pridat modul
+    $modules_admin[] = $module;
+	// **************   KONEC Modul dokumentace        ************************************
+    // ************************************************************************************
+
+    // ************************************************************************************
+    // **************   Modul správa uživatelů (Drtina - A17B0202P)	***************************
+
+    // novy modul
+    $module = array();
+    $module["name"] = "sprava_uzivatelu";
+    $module["title"] = "Správa uživatelů";
+    $module["route_name"] = "sprava_uzivatelu";
+    $module["route_path"] = "/plugin/$module[name]";
+    $module["route"] = array("controller_name" => "sprava_uzivatelu_controller", "controller_action" => "indexAction");
+
+    // pridat modul
+    $modules_admin[] = $module;
+    // **************   KONEC Modul správa uživatelů        ************************************
+    // ************************************************************************************
     return $modules_admin;
