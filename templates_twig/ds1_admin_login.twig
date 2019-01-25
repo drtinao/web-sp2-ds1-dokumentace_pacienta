@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="SE3 - admin">
+    <meta name="author" content="Martin Dostal">
+    <meta name="keyword" content="">
+    <title>Admin</title>
+
+    <!-- Icons-->
+    <link href="{{ base_url }}node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="{{ base_url }}node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ base_url }}node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for Coreui -->
+    <link href="{{ base_url }}node_modules/@coreui/coreui/dist/css/coreui.css" rel="stylesheet">
+    <link href="{{ base_url }}template/css/vendors/coreui-pace.css" rel="stylesheet">
+    <!--
+    <link href="{{ base_url }}node_modules/pace-progress/templates/pace-theme-minimal.tmpl.css" rel="stylesheet">
+    -->
+
+    <!-- recaptcha - pouziva se na nekolika mistech -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body class="app flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+
+                {{ content | raw }}
+
+
+            </div>
+        </div>
+    </div><!-- /container -->
+
+    <!-- Bootstrap and necessary plugins-->
+    <script src="{{ base_url }}node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="{{ base_url }}node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="{{ base_url }}node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ base_url }}node_modules/pace-progress/pace.min.js"></script>
+    <script src="{{ base_url }}node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="{{ base_url }}node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+</body>
+</html>
