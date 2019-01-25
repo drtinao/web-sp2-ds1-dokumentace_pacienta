@@ -58,7 +58,7 @@ class dokumentace_pacient_controller extends ds1_base_controller
             $where_array = array();
             // count_on_page a page se u prikazu count neuvazuje
             $total = $dokumentace_pacient->getDokumentaceByLogin("$prihlaseny_uzivatel_udaje[login]", "count", 1, 1, $where_array);
-            $dokumentace_list = $dokumentace_pacient->getDokumentaceByLogin("$prihlaseny_uzivatel_udaje[login]","data", $this->page_number, $count_on_page, $where_array, "id", "asc");
+            $dokumentace_list = $dokumentace_pacient->getDokumentaceByLogin("$prihlaseny_uzivatel_udaje[login]","data", $this->page_number, $count_on_page, $where_array, "id", "desc");
 
           //vytvořím si pole pacientů, které bude obsahovat údaje ve formátu: jméno příjmení[id (pokud více stejné jméno)]
           $where_array = array();
